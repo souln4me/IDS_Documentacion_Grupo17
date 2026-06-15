@@ -40,4 +40,4 @@ El repositorio está organizado de la siguiente manera para facilitar su revisi�
 - Benjamin Ignacio Aguirre Betancour
 - Hugo Francisco Manuel Zamora Pardo
 
-**Profesor Guía:** Paulo Luis Francisco Quinsacara Jofré
+**Profesor:** Paulo Luis Francisco Quinsacara Jofré
