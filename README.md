@@ -1,4 +1,4 @@
-# 🏥 Documentación Oficial - FRO Salud SpA
+# 🏥 Documentación - FRO Salud SpA
 
 **Proyecto:** Desarrollo de una solución de software integral con el propósito de centralizar los servicios y la interacción usuario-profesional en FRO Salud SpA.
 
