@@ -16,7 +16,6 @@ Repositorio oficial de documentación para el proyecto de Ingeniería de Softwar
 https://drive.google.com/file/d/17MhzGriJj7TC-7eij33kQkNEN2Vqoq0s/view
 
 ## ⚙️ Repositorio de Código
-Este repositorio es exclusivo para el respaldo de la **Documentación Técnica**. El código fuente de la aplicación (Frontend en React Native y Backend en Node.js/Express) se mantiene y versiona en el repositorio principal del proyecto.
+Este repositorio es exclusivo para el respaldo de la **Documentación Técnica**. El código fuente de la aplicación se mantiene y versiona en el repositorio correspondiente.
 
 ---
-*Proyecto desarrollado para la asignatura de Ingeniería de Software.*
