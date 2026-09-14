@@ -15,7 +15,7 @@ Repositorio oficial de documentación para el proyecto de Ingeniería de Softwar
 ## 📌 Presentación Incremento 1
 https://drive.google.com/file/d/17MhzGriJj7TC-7eij33kQkNEN2Vqoq0s/view
 
-## 📌 Presentación Incremento 1
+## 📌 Presentación Incremento 2
 link...
 
 ## ⚙️ Repositorio de Código
