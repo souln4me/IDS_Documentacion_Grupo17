@@ -16,7 +16,7 @@ Repositorio oficial de documentación para el proyecto de Ingeniería de Softwar
 https://drive.google.com/file/d/17MhzGriJj7TC-7eij33kQkNEN2Vqoq0s/view
 
 ## 📌 Presentación Incremento 2
-link...
+https://drive.google.com/file/d/1_N0x0DPZxgagGgyiRFIMVSX5ilTjMHRr/view?usp=sharing
 
 ## ⚙️ Repositorio de Código
 Este repositorio es exclusivo para el respaldo de la **Documentación Técnica**. El código fuente de la aplicación se mantiene y versiona en el repositorio correspondiente.
