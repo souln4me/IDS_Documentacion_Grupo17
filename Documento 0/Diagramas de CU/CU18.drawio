@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="Wkw63SAW7YFfSdE9ophs">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yaebMsHNpobG6r959qq7-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="540" width="750" x="365" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Solicitando anulación de cita confirmada indicando el motivo" vertex="1">
+          <mxGeometry height="90" width="170" x="400" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizando cita a CANCELADA_PACIENTE o CANCELADA_PROFESIONAL con motivo, liberando el bloque" vertex="1">
+          <mxGeometry height="110" width="180" x="650" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Visualizando comprobante de cancelación y estado" vertex="1">
+          <mxGeometry height="80" width="160" x="660" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Identificando pacientes en lista de espera y disparando notificación" vertex="1">
+          <mxGeometry height="80" width="160" x="650" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-6" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="yaebMsHNpobG6r959qq7-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="290" as="sourcePoint" />
+            <mxPoint x="630" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-7" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="yaebMsHNpobG6r959qq7-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="100" as="sourcePoint" />
+            <mxPoint x="760" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-8" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="yaebMsHNpobG6r959qq7-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="70" as="sourcePoint" />
+            <mxPoint x="730" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Restringiendo anulación por plazo reglamentario" vertex="1">
+          <mxGeometry height="80" width="160" x="450" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Revirtiendo por fallo de persistencia" vertex="1">
+          <mxGeometry height="80" width="160" x="940" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrando error de carga en log del cliente" vertex="1">
+          <mxGeometry height="80" width="160" x="940" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrando fallo y manteniendo cancelación" vertex="1">
+          <mxGeometry height="80" width="160" x="940" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-13" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="yaebMsHNpobG6r959qq7-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="70" as="sourcePoint" />
+            <mxPoint x="690" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-14" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="yaebMsHNpobG6r959qq7-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="140" as="sourcePoint" />
+            <mxPoint x="850" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-15" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="yaebMsHNpobG6r959qq7-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="250" as="sourcePoint" />
+            <mxPoint x="880" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-16" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="yaebMsHNpobG6r959qq7-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="390" as="sourcePoint" />
+            <mxPoint x="910" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-18" edge="1" parent="1" source="yaebMsHNpobG6r959qq7-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="yaebMsHNpobG6r959qq7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yaebMsHNpobG6r959qq7-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="260" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sPxwwEmUbHkUY9FZtXKx-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU18 - Sistema de cancelación de citas y liberación de recursos" vertex="1">
+          <mxGeometry height="26" width="80" x="700" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rsoyntRh5kGTrKu7TwXh-2" edge="1" parent="1" source="rsoyntRh5kGTrKu7TwXh-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="yaebMsHNpobG6r959qq7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rsoyntRh5kGTrKu7TwXh-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="260" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

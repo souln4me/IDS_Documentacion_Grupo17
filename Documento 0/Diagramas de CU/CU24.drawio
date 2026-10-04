@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="wyRQ9p1BN6NwPjPUVN0M">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G-IU7uNgmGRK993P0StC-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="590" width="780" x="140" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Solicitando apertura de Ficha Clínica para revisión del pre-llenado" vertex="1">
+          <mxGeometry height="80" width="160" x="170" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Localizando o creando ficha y anexando resumen a la anamnesis" vertex="1">
+          <mxGeometry height="100" width="170" x="440" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-7" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G-IU7uNgmGRK993P0StC-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="90" as="sourcePoint" />
+            <mxPoint x="560" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Emitiendo error por registro no localizado" vertex="1">
+          <mxGeometry height="80" width="160" x="720" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Abortando por formato incompatible" vertex="1">
+          <mxGeometry height="80" width="160" x="720" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-13" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="G-IU7uNgmGRK993P0StC-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="60" as="sourcePoint" />
+            <mxPoint x="490" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-15" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="G-IU7uNgmGRK993P0StC-20" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="40" as="sourcePoint" />
+            <mxPoint x="660" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando formato y categorizando respuestas" vertex="1">
+          <mxGeometry height="80" width="160" x="440" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Confirmando integración y mostrando vista previa" vertex="1">
+          <mxGeometry height="80" width="160" x="440" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-23" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G-IU7uNgmGRK993P0StC-22" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="785" as="sourcePoint" />
+            <mxPoint x="390" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-25" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="G-IU7uNgmGRK993P0StC-20" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="785" as="sourcePoint" />
+            <mxPoint x="490" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Agrupando datos sin clasificar" vertex="1">
+          <mxGeometry height="80" width="160" x="720" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-31" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-27" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="G-IU7uNgmGRK993P0StC-20" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="320" as="sourcePoint" />
+            <mxPoint x="630" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-36" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G-IU7uNgmGRK993P0StC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G-IU7uNgmGRK993P0StC-35" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="70" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ei9jt9ZXM5a0IYMzu0RV-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU24 - Sistema de estructuración de datos a Ficha Clínica" vertex="1">
+          <mxGeometry height="26" width="80" x="470" y="-20" as="geometry" />
+        </mxCell>
+      <mxCell id="cu24-inc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Recibiendo entrevista completada" vertex="1">
+          <mxGeometry height="80" width="160" x="440" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cu24-e-inc1" edge="1" parent="1" source="G-IU7uNgmGRK993P0StC-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cu24-inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu24-ext4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Revirtiendo y conservando respuestas" vertex="1">
+          <mxGeometry height="80" width="160" x="720" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="cu24-e-ext4" edge="1" parent="1" source="cu24-ext4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="G-IU7uNgmGRK993P0StC-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

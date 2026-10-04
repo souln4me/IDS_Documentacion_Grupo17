@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU47" id="cu47_diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="700" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="CU47 - Prescribiendo pautas de ejercicio técnico" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="50" width="700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L0" value="Ajustando frecuencia por defecto manualmente" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="118" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" value="Prescribiendo pautas de ejercicio técnico" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="232" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" value="Corrigiendo valores numéricos inválidos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="348" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" value="Retornando a biblioteca para seleccionar material" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="462" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R0" value="Definiendo frecuencia y vigencia de la rutina" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="118" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R1" value="Vinculando pauta al perfil del paciente" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="232" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2" value="Validando parámetros prescritos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="348" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R3" value="Configurando parámetros de carga física" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="462" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="inc0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L1" target="R0">
+          <mxGeometry x="0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L1" target="R1">
+          <mxGeometry x="0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L1" target="R2">
+          <mxGeometry x="0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L1" target="R3">
+          <mxGeometry x="0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L0" target="R0">
+          <mxGeometry x="-0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L2" target="R2">
+          <mxGeometry x="-0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="L3" target="R3">
+          <mxGeometry x="-0.3" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" value="Profesional" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="232" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" value="" style="html=1;endArrow=classic;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="A1" target="L1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="5JAC5uBWTQc444gfxv84">
+    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="540" width="750" x="-460" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Seleccionando opción de modificar cita vigente indicando motivo" vertex="1">
+          <mxGeometry height="80" width="160" x="-450" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando cumplimiento de reglas de anticipación&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="160" x="-160" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Explorando cupos disponibles y seleccionando nueva fecha y hora de atención" vertex="1">
+          <mxGeometry height="80" width="160" x="-160" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizando persistencia liberando horario anterior, dejando la cita AGENDADA y registrando trazabilidad" vertex="1">
+          <mxGeometry height="120" width="190" x="-170" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-7" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="DFYZbGGM3mDpYP1CAZRq-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="930" as="sourcePoint" />
+            <mxPoint x="-190" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-8" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="DFYZbGGM3mDpYP1CAZRq-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="740" as="sourcePoint" />
+            <mxPoint x="-60" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-9" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="DFYZbGGM3mDpYP1CAZRq-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="710" as="sourcePoint" />
+            <mxPoint x="-90" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Deshabilitando controles de edición por cita terminal o en curso" vertex="1">
+          <mxGeometry height="80" width="160" x="-420" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando habilitación del calendario" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Detectando colisión de concurrencia o bloqueo de agenda" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrando error de notificación" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-14" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="DFYZbGGM3mDpYP1CAZRq-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="710" as="sourcePoint" />
+            <mxPoint x="-130" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-15" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="DFYZbGGM3mDpYP1CAZRq-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="780" as="sourcePoint" />
+            <mxPoint x="30" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-16" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="DFYZbGGM3mDpYP1CAZRq-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="890" as="sourcePoint" />
+            <mxPoint x="60" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-17" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-13" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="DFYZbGGM3mDpYP1CAZRq-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1030" as="sourcePoint" />
+            <mxPoint x="90" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-20" edge="1" parent="1" source="DFYZbGGM3mDpYP1CAZRq-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="DFYZbGGM3mDpYP1CAZRq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DFYZbGGM3mDpYP1CAZRq-19" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional (vía API)" vertex="1">
+          <mxGeometry height="60" width="30" x="-600" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="IiWYjMf6ZtsdIJf_N4i3-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU17 - Sistema de reprogramación de citas médicas" vertex="1">
+          <mxGeometry height="26" width="80" x="-140" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="3lYKI_42p4Y3VgeCEcT--2" edge="1" parent="1" source="3lYKI_42p4Y3VgeCEcT--1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="DFYZbGGM3mDpYP1CAZRq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3lYKI_42p4Y3VgeCEcT--1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="-600" y="780" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

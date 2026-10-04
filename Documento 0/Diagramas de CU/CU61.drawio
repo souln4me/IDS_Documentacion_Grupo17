@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU61" id="cu61_diagram">
+    <mxGraphModel dx="1000" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="841" pageHeight="841" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="0" width="721" height="821" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="CU61 – Enrutando automáticamente solicitudes por categoría" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=17;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="6" width="701" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="UC" value="Enrutando automáticamente solicitudes por categoría" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=18;spacingRight=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="112" y="364" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="I0" value="Asignando el ticket al operador del área con menos tickets, registrando el momento y avisándole" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="72" width="185" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="inc0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E0_0" value="Dejando sin asignar en supervisión general, alertando a los administradores y reintentando al abrir la bandeja" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="44" width="178" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="ext0_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E0_0" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1" value="Abriendo la bandeja y filtrando, con captura ampliable y contacto del solicitante" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="294" width="185" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_0" value="Exigiendo iniciar sesión de nuevo por sesión expirada" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="322" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E1_0" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I2" value="Tomando el ticket o pasándolo a En proceso y resolviéndolo con respuesta" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="489" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_0" value="Rechazando la escritura por ticket tomado por otro operador y pidiendo refrescar" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="489" width="178" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E2_0" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I3" value="Guardando estado y resolución, registrando en bitácora y avisando al solicitante" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="657" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_0" value="Exigiendo la respuesta antes de resolver" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="684" width="178" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E3_0" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="34" y="390" width="28" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" value="" style="html=1;endArrow=classic;endSize=10;curved=0;rounded=0;" edge="1" parent="1" source="A1" target="UC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

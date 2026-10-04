@@ -1,0 +1,188 @@
+Delivered-To: vicente.blaessinger@gmail.com
+Received: by 2002:a17:907:6d29:b0:ba0:585a:4900 with SMTP id sa41csp5284740ejc;
+        Sat, 25 Apr 2026 17:55:29 -0700 (PDT)
+X-Received: by 2002:a05:6402:1590:b0:670:8b48:182a with SMTP id 4fb4d7f45d1cf-672bfd8afadmr15870402a12.4.1777164929822;
+        Sat, 25 Apr 2026 17:55:29 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1777164929; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=WzreflWpV0OCabM9Kor91pat7bdAS4g+Sc3/0aDGgdtRHMCsgQPqb2tSD2YqqqvwRY
+         Dblwn6FJKCI5AUVBjksat7b1bv6VdlsSmIEHFrxkO4AcQI+jrISDATmoz6k7NWTBTkPS
+         GlKEj09lEGbePI8El7lj4OrOALSli0SvHKyao3BU2cTHYUxxNEd9wROuWc4cWG+l6c/E
+         odIOSREVZprPRgSrvWe6n+y4NvrmTCf/049DNeAsfmzLWOFEXUTqu+eWhJD+SaB4ihVf
+         +CcAEnpk0DhuZ+gjqOxD6BWnH5AoYxkAN8nPYZ4K7QQfihGadY+SHXtli6xMoTnYyn0p
+         qwpQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=lQGNkHUqyEmvIFuDzvrfslpwb93DDClpEikk/ju0kG8=;
+        fh=QhwllCqtA7vYFlCeea+Rn7xU4fhhZ2frfJOa5khMIMk=;
+        b=E66oNTmmC9oYhpIlyHLHhypOuJSvzrwk/ybCXv/cLX+hq9sJjQ7B/3CtUJKzTvPMgr
+         Wz8orh2XXPiiVMopeYoBSr/bNn5RwexDR29nkJ4YPOotx2THZZbiornWGVxyV9LE3s+P
+         Kd5x1O+7KybGQLdc2GlIeAdVB9J8eNu3WzQrBXNrA1ewAGi51lVS0sQtFkGb0Hy7hMuF
+         Sjrm0AMvzoXhp7L3QrZ6mZLpOIc0tQpffDLkior5MiWURMiw3tlFyhQZn/AvtNkIZCx9
+         ogRwBsZxiLSH70bu/4GidoeU9xiMmrCVUgTlYBlIHHbga0gHRnNGN/PEOQbmKgZfvmSW
+         bGgA==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@frosalud.cl header.s=google header.b=uFY1ivLk;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of contacto@frosalud.cl designates 209.85.220.41 as permitted sender) smtp.mailfrom=contacto@frosalud.cl;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=frosalud.cl;
+       dara=pass header.i=@gmail.com
+Return-Path: <contacto@frosalud.cl>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 4fb4d7f45d1cf-6749e85584esor3395281a12.12.2026.04.25.17.55.29
+        for <vicente.blaessinger@gmail.com>
+        (Google Transport Security);
+        Sat, 25 Apr 2026 17:55:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of contacto@frosalud.cl designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@frosalud.cl header.s=google header.b=uFY1ivLk;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of contacto@frosalud.cl designates 209.85.220.41 as permitted sender) smtp.mailfrom=contacto@frosalud.cl;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=frosalud.cl;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1777164929; cv=none;
+        d=google.com; s=arc-20240605;
+        b=dctiwumOPjAIlX3o2g4gjJBV/yxBMhgF0Fh/XXiLaSdAHwmUuAoo78ba79SC3YQTkk
+         RX7U2nI2gBt+xVXV+1+STRj01gdGIus9ucD3NDA3F182jL/D9b4n7uThbxuHxzES28ZS
+         yrIuE4uiA/iDN6n6gOxFjb1tts5xlh2pCmtkrWbNASU/OrrrrK/L2NLQBymv3AIo52J1
+         guoTQXdKGBZMMtJBMwNRxHFrZ7tcVMFGCVE03aLluNzh0dq1I/jtylxPEt/q5ZMF5gzj
+         xqzkMNQS+qqrqG1ft9av9I+5flCZGjLz2Gp+181iP9FvkbuXFniq9ic4w1awkj6HDXjN
+         QU+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=lQGNkHUqyEmvIFuDzvrfslpwb93DDClpEikk/ju0kG8=;
+        fh=QhwllCqtA7vYFlCeea+Rn7xU4fhhZ2frfJOa5khMIMk=;
+        b=RAEZLAqDTs8bcRXjahmkGkYBZZHIrX2u7iBVvGSzA6CNit+HwNQNhNJRfj9DXzEuL2
+         eRw0p1E4uowcrwVmaj4ZhSEFEI3qYUlFg5Xi9Ek7Q4toNls3zwR+NrX58gY/QN+sceai
+         WVkWybISJzUvf2/7Ey9FLnA2cjcuCAQ+1DD5b6KKwjvAMYpdflVuvLDjlEtf5C0FUDEu
+         6vSnW4NDUTn6aEPhcMOEu6gpk7De3ImNzYFpH/V6FYsXCqyq3vwwyaXLkprQKlYuz+po
+         9hUiKc4sReQAN5pqlCt4SyQ2gWkRSkn2YpaqKU/5N3ZuKSE+xxro5Rsypc/WrCIt+uxe
+         MS7A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=frosalud.cl; s=google; t=1777164929; x=1777769729; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=lQGNkHUqyEmvIFuDzvrfslpwb93DDClpEikk/ju0kG8=;
+        b=uFY1ivLk6E2lX7OLIcsjligcsKT7WwkWa3PS4UIRrijj8PGHA+CDcBRc4742HYQPoF
+         CZSInPiyJ4kPWB1eGtushD2nP1ysOryN0exGW1Tdrr3QJg52aQuOJcmdXFXmf1JG+aZF
+         2NJSefflpgn9nTE4t9ah0Lz7g91MKES7lQ13meG4paD56XauZgDR8FNmbcHeJs9q+XrB
+         +eFh5C+mMzQcbUn1aGt7qjFa1nCGHZQTFT4v8ilhskHvOR0TiqZbE+PPWoU9VxdoLYVf
+         alr4Ca7fWvgZFk218C5ri5MJxuMPvp36iWP6L/CuJsgPoyc7f2Q+tB2ObQwrX5flaJTm
+         THGQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1777164929; x=1777769729;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=lQGNkHUqyEmvIFuDzvrfslpwb93DDClpEikk/ju0kG8=;
+        b=hm/IOnILbdPSifmF1lRZtZILggvtdlN3mUEM3VlAU5QkAp7PRYxmQPe12hjIVkUCCp
+         dh2Vz+7VTboVnCA5CWatv+oqWR3ckms6XX7xp/RUVHVJeXZgDCcuvoxFVc6AxftWKERA
+         JoAbQZGD/1Pg8pDPZA/fl8No1/gaqUo5lQ8Ce8LxbwmErQ5gyosbTptuUYrjmcKwUbDb
+         0+cFePvkESm3fvCNeJsgaLkzId1/j5qD6ZO66tksbFgPgRZO/VuIlJE2Jf8Ir6Io2yy5
+         vjQFeiXQwemhLUrM4/PAk97UiqLm+PNXc8zLnAWUPQvgq6CspBOORXiuAtqPxXqDDWKL
+         kTDQ==
+X-Gm-Message-State: AOJu0YwLzj0tmDs0oDo39idHxVxc9K6pQkMSn6rnCO7uyqW5UvAeaV5x
+	aS41pFD1TijBNNEMSO3Mt1Z1g6nFNeGfTphXJE6F0BDy485xiMQVfdNcehQcVhqdK+3UThsVjig
+	62sGtpmpnCwsD6Z4f2CYihPtemo0xcIzivZEZ6RSlH/HViJC2CfPeF1tM
+X-Gm-Gg: AeBDieskNSdD1IST9Yd/+93vCHdXU5kpUpeLJ27wSuPFeYwIJmPDCh7TaBQFU50Owk9
+	kizo8ec2WgjHxlEe/HwarckgAWaAj2nirJ15YyZRelsdLLtGNOhGY+JKcXDSSu2o1udDgSI+t2T
+	PwKZTqlyrD4zUtZ0fWocctP1QORGoTMsph5d91gPHgyfeQsz5u2M2g9ufg3Lq5o4BYkaKn5tAp+
+	9nwAxRkflTqCcjWp4Lh/3VFllsJ6dQmp4Acv0LlDAy+aF85MGDxUlCiOZyJmrHiaH7nrm7tajgb
+	XQCykxRbbCd0e3Qhmcb+ANOG/4hHyL9E5J+vYekda8v3vBq5YeWI
+X-Received: by 2002:a05:6402:392:b0:670:32d7:dec1 with SMTP id
+ 4fb4d7f45d1cf-672bfda1c5amr11470933a12.11.1777164928678; Sat, 25 Apr 2026
+ 17:55:28 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAAmRUvF_2AiYRw5G2O4+p2A2cTCwW=0d5wxCxboRQ1pS3S01TA@mail.gmail.com>
+In-Reply-To: <CAAmRUvF_2AiYRw5G2O4+p2A2cTCwW=0d5wxCxboRQ1pS3S01TA@mail.gmail.com>
+From: Fro Salud <contacto@frosalud.cl>
+Date: Sat, 25 Apr 2026 20:55:15 -0400
+X-Gm-Features: AQROBzCUTDcYptwkChaH78algH73bWj0_r5ArH38Gfc2wAn5dvL7RnD7g8mK0ro
+Message-ID: <CAEsjVT07je4fmw1wEoS+uRkjiAkhpK57sH2spW1T1RHXL+epUw@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_Confirmaci=C3=B3n_de_Requerimientos?=
+To: Vicente Blaessinger <vicente.blaessinger@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000480ba006505274b4"
+
+--000000000000480ba006505274b4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Estimado.
+El documento est=C3=A1 s=C3=B3lido porque contempla elementos esenciales pa=
+ra una app
+de salud: ficha cl=C3=ADnica electr=C3=B3nica, consentimiento, inalterabili=
+dad de
+registros, auditor=C3=ADa, agendamiento, validaci=C3=B3n de sesiones, dashb=
+oard de
+progreso, prescripci=C3=B3n de ejercicios, comunicaci=C3=B3n cl=C3=ADnica, =
+pagos,
+interoperabilidad y administraci=C3=B3n. Adem=C3=A1s, menciona expl=C3=ADci=
+tamente la Ley
+20.584 sobre derechos y deberes de los pacientes en relaci=C3=B3n con la fi=
+cha
+cl=C3=ADnica, lo cual es clave para una plataforma chilena de salud.
+
+Revisamos los requerimientos de la aplicaci=C3=B3n FRO Salud y la estructur=
+a
+general est=C3=A1 correctamente orientada para una plataforma cl=C3=ADnica,
+administrativa y comercial escalable en el tiempo.
+
+Muchas gracias por la consideraci=C3=B3n y proactividad.
+Atte. Equipo FRO Salud Chile.
+
+
+El vie, 24 abr 2026 a la(s) 8:02=E2=80=AFa.m., Vicente Blaessinger (
+vicente.blaessinger@gmail.com) escribi=C3=B3:
+
+> Buenas! dese=C3=A1ndoles un hermoso Viernes, hemos acabado los requerimie=
+ntos
+> agregando lo que se habl=C3=B3 en la =C3=BAltima reuni=C3=B3n! por favor =
+revisenlo y
+> digannos que les parece! favor de responder a este mismo correo con el
+> visto bueno de ser as=C3=AD!
+>
+> Saludos
+> Vicente Blaessinger
+>
+
+--000000000000480ba006505274b4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span style=3D"color:rgb(0,0,0)">Estimado.</span><div><spa=
+n style=3D"color:rgb(0,0,0)">El documento est=C3=A1 s=C3=B3lido porque cont=
+empla elementos esenciales para una app de salud: ficha cl=C3=ADnica electr=
+=C3=B3nica, consentimiento, inalterabilidad de registros, auditor=C3=ADa, a=
+gendamiento, validaci=C3=B3n de sesiones, dashboard de progreso, prescripci=
+=C3=B3n de ejercicios, comunicaci=C3=B3n cl=C3=ADnica, pagos, interoperabil=
+idad y administraci=C3=B3n. Adem=C3=A1s, menciona expl=C3=ADcitamente la Le=
+y 20.584 sobre derechos y deberes de los pacientes en relaci=C3=B3n con la =
+ficha cl=C3=ADnica, lo cual es clave para una plataforma chilena de salud.<=
+/span><br></div><div><span style=3D"color:rgb(0,0,0)"><br></span></div><div=
+><span style=3D"color:rgb(0,0,0)">Revisamos los requerimientos de la aplica=
+ci=C3=B3n FRO Salud y la estructura general est=C3=A1 correctamente orienta=
+da para una plataforma cl=C3=ADnica, administrativa y comercial escalable e=
+n el tiempo.</span></div><div><span style=3D"color:rgb(0,0,0)"><br></span><=
+/div><div><font color=3D"#000000"><span style=3D"caret-color: rgb(0, 0, 0);=
+">Muchas gracias por la consideraci=C3=B3n y proactividad.</span></font></d=
+iv><div><font color=3D"#000000"><span style=3D"caret-color: rgb(0, 0, 0);">=
+Atte. Equipo FRO Salud Chile.</span></font></div><div><p style=3D"color:rgb=
+(0,0,0)"></p></div></div><br><div class=3D"gmail_quote gmail_quote_containe=
+r"><div dir=3D"ltr" class=3D"gmail_attr">El vie, 24 abr 2026 a la(s) 8:02=
+=E2=80=AFa.m., Vicente Blaessinger (<a href=3D"mailto:vicente.blaessinger@g=
+mail.com">vicente.blaessinger@gmail.com</a>) escribi=C3=B3:<br></div><block=
+quote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left-w=
+idth:1px;border-left-style:solid;border-left-color:rgb(204,204,204);padding=
+-left:1ex"><div dir=3D"ltr">Buenas! dese=C3=A1ndoles un hermoso Viernes, he=
+mos acabado los requerimientos agregando lo que se habl=C3=B3 en la =C3=BAl=
+tima reuni=C3=B3n! por favor revisenlo y digannos que les parece! favor de =
+responder a este mismo correo con el visto bueno de ser as=C3=AD!<br><br>Sa=
+ludos<br>Vicente Blaessinger</div>
+</blockquote></div>
+
+--000000000000480ba006505274b4--

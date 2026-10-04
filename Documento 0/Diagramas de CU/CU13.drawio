@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="1GzaFJhNGcZZ3X9fkRNM">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tx53f4QOiuWrlfbDZobW-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="460" width="890" x="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ejecutando acción de lectura o modificación en Ficha Clínica Electrónica" vertex="1">
+          <mxGeometry height="90" width="195" x="250" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Interceptando operación y clasificando por entidad y verbo" vertex="1">
+          <mxGeometry height="80" width="170" x="630" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Proveyendo metadatos de sesión activa mientras el profesional continúa labor clínica" vertex="1">
+          <mxGeometry height="80" width="170" x="630" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Capturando ID, timestamp, acción e IP para escribir en log inmutable de auditoría" vertex="1">
+          <mxGeometry height="80" width="170" x="630" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-5" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="510" as="sourcePoint" />
+            <mxPoint x="400" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-6" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="320" as="sourcePoint" />
+            <mxPoint x="530" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-7" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="rPRaf1tQjSXIGN9wVR3m-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="290" as="sourcePoint" />
+            <mxPoint x="500" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando ruta no registrada en entidades auditables" vertex="1">
+          <mxGeometry height="80" width="170" x="380" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generando alerta de error interno" vertex="1">
+          <mxGeometry height="70" width="140" x="940" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rechazando petición por metadatos ausentes" vertex="1">
+          <mxGeometry height="70" width="140" x="940" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Deteniendo operación por falla en log inmutable" vertex="1">
+          <mxGeometry height="70" width="140" x="940" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-12" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-8" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="rPRaf1tQjSXIGN9wVR3m-1" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="290" as="sourcePoint" />
+            <mxPoint x="460" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-13" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="rPRaf1tQjSXIGN9wVR3m-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1025" y="105" as="sourcePoint" />
+            <mxPoint x="835" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-14" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="rPRaf1tQjSXIGN9wVR3m-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1055" y="215" as="sourcePoint" />
+            <mxPoint x="865" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-15" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="rPRaf1tQjSXIGN9wVR3m-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1085" y="355" as="sourcePoint" />
+            <mxPoint x="895" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-19" edge="1" parent="1" source="rPRaf1tQjSXIGN9wVR3m-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rPRaf1tQjSXIGN9wVR3m-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="MvW0d67G3b7IsqVjDq18-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU13 - Sistema de bitácora de auditoría de seguridad" vertex="1">
+          <mxGeometry height="26" width="80" x="630" y="10" as="geometry" />
+        </mxCell>
+      <mxCell id="cu13-act-pac" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cu13-act-pac" edge="1" parent="1" source="cu13-act-pac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu13-act-adm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cu13-act-adm" edge="1" parent="1" source="cu13-act-adm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu13-act-sis" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Sistema" vertex="1">
+          <mxGeometry height="60" width="30" x="120" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="e-cu13-act-sis" edge="1" parent="1" source="cu13-act-sis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rPRaf1tQjSXIGN9wVR3m-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

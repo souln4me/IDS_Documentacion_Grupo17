@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU19" id="cu19_diagram">
+    <mxGraphModel dx="1000" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="841" pageHeight="954" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="0" width="721" height="934" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="CU19 – Gestionando lista de espera secuencial" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=17;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="6" width="701" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="UC" value="Gestionando lista de espera secuencial" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=18;spacingRight=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="112" y="434" width="160" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="I0" value="Seleccionando bloque ocupado y activando 'Avisarme si se libera'" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="44" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E0_0" value="Deshabilitando inscripción por lista completa o bloque propio, libre o pasado" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="44" width="178" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="ext0_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E0_0" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1" value="Registrando posición según orden de llegada y mostrándola en Mis Citas" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="212" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_0" value="Informando fallo del registro y sugiriendo reintentar" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="226" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E1_0" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I2" value="Manteniendo la inscripción visible en Mis Citas, con opción de salir de la lista" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="394" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_0" value="Entregando el aviso por la app y el correo y registrando los canales en bitácora" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="380" width="178" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E2_0" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I3" value="Ofreciendo el cupo solo al primero con plazo, aviso en la app y correo con enlace" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="575" width="185" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_0" value="Revocando prioridad y transfiriendo oportunidad" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="589" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E3_0" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I4" value="Tomando el cupo desde Mis Citas o desde el enlace del correo, agendando la cita y cerrando la lista" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="743" width="185" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E4_0" value="Informando bloque ocupado nuevamente y venciendo el turno" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="770" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext4_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E4_0" target="I4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" value="Paciente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="34" y="446" width="28" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" value="" style="html=1;endArrow=classic;endSize=10;curved=0;rounded=0;" edge="1" parent="1" source="A1" target="UC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

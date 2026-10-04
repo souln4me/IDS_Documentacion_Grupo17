@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU59" id="cu59_diagram">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu59_container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="650" width="750" x="110" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_title" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU59 - Gestionando parámetros globales del sistema" vertex="1">
+          <mxGeometry height="30" width="350" x="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_actor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_main" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionando parámetros globales del sistema (aranceles, plazos, tolerancias, límites)" vertex="1">
+          <mxGeometry height="100" width="180" x="130" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_inc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizando persistencia de parámetros globales" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_inc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando esquema de datos entrantes" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_inc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Modificando variables parametrizadas" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_inc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultando panel de configuración maestra" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_ext1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Deshaciendo transacción por fallo de persistencia" vertex="1">
+          <mxGeometry height="60" width="170" x="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_ext2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando validación local en React" vertex="1">
+          <mxGeometry height="60" width="170" x="200" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_ext3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando transacción por conflicto de concurrencia" vertex="1">
+          <mxGeometry height="60" width="170" x="240" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="cu59_ext4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando carga por token JWT invalidado y registrando en bitácora de auditoría" vertex="1">
+          <mxGeometry height="80" width="180" x="234" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_actor_main59" edge="1" parent="1" source="cu59_actor" style="endArrow=classic;html=1;rounded=0;" target="cu59_main">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_inc1_59" edge="1" parent="1" source="cu59_main" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cu59_inc1" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" x="0.2279" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_inc2_59" edge="1" parent="1" source="cu59_main" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cu59_inc2" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_inc3_59" edge="1" parent="1" source="cu59_main" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="cu59_inc3" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_inc4_59" edge="1" parent="1" source="cu59_main" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cu59_inc4" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" x="-0.2051" y="-10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ext1_59" edge="1" parent="1" source="cu59_ext1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.371;entryDx=0;entryDy=0;entryPerimeter=0;" target="cu59_inc1" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ext2_59" edge="1" parent="1" source="cu59_ext2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.012;entryY=0.357;entryDx=0;entryDy=0;entryPerimeter=0;" target="cu59_inc2" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ext3_59" edge="1" parent="1" source="cu59_ext3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cu59_inc3" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ext4_59" edge="1" parent="1" source="cu59_ext4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="cu59_inc4" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

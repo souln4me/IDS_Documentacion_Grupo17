@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU60" id="cu60_diagram">
+    <mxGraphModel dx="1000" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="841" pageHeight="786" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="0" width="721" height="766" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="CU60 – Registrando y siguiendo solicitudes de soporte" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=17;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="6" width="701" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="UC" value="Registrando y siguiendo solicitudes de soporte" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=18;spacingRight=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="112" y="337" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="I0" value="Abriendo Soporte desde el panel" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="71" width="185" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="inc0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E0_0" value="Reanudando operación tras estabilizar conectividad" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="44" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext0_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E0_0" target="I0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I1" value="Cargando categorías y formulario" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="198" width="185" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E1_0" value="Rechazando el adjunto y ofreciendo enviar sin imagen" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="184" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E1_0" target="I1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I2" value="Eligiendo categoría, describiendo el problema, adjuntando imagen opcional y enviando" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="324" width="185" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E2_0" value="Corrigiendo variables obligatorias faltantes" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="366" width="178" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E2_0" target="I2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I3" value="Subiendo la imagen, guardando el ticket, enrutándolo (CU61) y mostrándolo en 'Mis solicitudes'" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="358" y="547" width="185" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3_0" value="Comprimiendo archivo adjunto para reintento" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
+          <mxGeometry x="631" y="602" width="178" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E3_0" target="I3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" value="Paciente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="34" y="310" width="28" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" value="" style="html=1;endArrow=classic;endSize=10;curved=0;rounded=0;" edge="1" parent="1" source="A1" target="UC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A2" value="Profesional" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="34" y="414" width="28" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="as2" value="" style="html=1;endArrow=classic;endSize=10;curved=0;rounded=0;" edge="1" parent="1" source="A2" target="UC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

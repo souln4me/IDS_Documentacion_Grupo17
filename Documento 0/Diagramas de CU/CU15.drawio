@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="SE4DGEYZ7l537MOOdAei">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5boPEtrYN6LwQ1UhveML-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="430" width="840" x="110" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-18" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_owPpXtV5gp7eTh_dyBT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Seleccionando bloque horario en interfaz del motor de agendamiento" vertex="1">
+          <mxGeometry height="80" width="200" x="140" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Recibiendo solicitud y procesando transacción de reserva temporal en servidor" vertex="1">
+          <mxGeometry height="80" width="200" x="470" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Aguardando confirmación de exclusividad mientras sistema valida disponibilidad" vertex="1">
+          <mxGeometry height="80" width="200" x="470" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Aplicando bloqueo mediante transacción con bloqueo de filas y persistiendo cita AGENDADA" vertex="1">
+          <mxGeometry height="80" width="200" x="470" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-7" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_owPpXtV5gp7eTh_dyBT-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="455" as="sourcePoint" />
+            <mxPoint x="390" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-8" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_owPpXtV5gp7eTh_dyBT-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="265" as="sourcePoint" />
+            <mxPoint x="520" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-9" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="_owPpXtV5gp7eTh_dyBT-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="235" as="sourcePoint" />
+            <mxPoint x="490" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Detectando pérdida de paquetes" vertex="1">
+          <mxGeometry height="70" width="140" x="240" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rechazando petición por token expirado" vertex="1">
+          <mxGeometry height="70" width="140" x="790" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Revirtiendo por pérdida de conexión" vertex="1">
+          <mxGeometry height="70" width="140" x="790" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Abortando transacción y notificando bloque reservado" vertex="1">
+          <mxGeometry height="80" width="150" x="785" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-14" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="_owPpXtV5gp7eTh_dyBT-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="235" as="sourcePoint" />
+            <mxPoint x="450" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-15" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="_owPpXtV5gp7eTh_dyBT-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="65" as="sourcePoint" />
+            <mxPoint x="720" y="65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-16" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="_owPpXtV5gp7eTh_dyBT-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="175" as="sourcePoint" />
+            <mxPoint x="750" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_owPpXtV5gp7eTh_dyBT-17" edge="1" parent="1" source="_owPpXtV5gp7eTh_dyBT-13" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="_owPpXtV5gp7eTh_dyBT-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="315" as="sourcePoint" />
+            <mxPoint x="780" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9l_aI106_WHte0Cw7VTZ-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU15 - Sistema de control de concurrencia de agendamiento" vertex="1">
+          <mxGeometry height="26" width="80" x="500" y="-26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

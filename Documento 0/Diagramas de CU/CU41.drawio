@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU41" id="cu41_diagram">
+    <mxGraphModel dx="1614" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu41_container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="600" width="700" x="150" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_title" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU41 - Validando sesión mediante protocolo multi-factor" vertex="1">
+          <mxGeometry height="30" width="350" x="350" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_actor1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_actor3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="60" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_main" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando sesión mediante protocolo multi-factor" vertex="1">
+          <mxGeometry height="70" width="160" x="190" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_inc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrando certificación en la cita (multifactor o manual)" vertex="1">
+          <mxGeometry height="80" width="180" x="640" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_inc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verificando coincidencia de factores" vertex="1">
+          <mxGeometry height="60" width="160" x="650" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_inc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Contrastando check-in y marcas temporales con tolerancia y radio parametrizados" vertex="1">
+          <mxGeometry height="80" width="180" x="640" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_inc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ejecutando validar sesión desde el historial" vertex="1">
+          <mxGeometry height="60" width="160" x="650" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_ext1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Suspendiendo sesión y derivando al Administrador con datos de contacto" vertex="1">
+          <mxGeometry height="70" width="180" x="380" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_ext2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="No persistiendo certificación" vertex="1">
+          <mxGeometry height="60" width="170" x="230" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_ext3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Informando cierre pendiente" vertex="1">
+          <mxGeometry height="60" width="170" x="270" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="cu41_ext4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Habilitando solicitud de cierre unilateral" vertex="1">
+          <mxGeometry height="60" width="170" x="320" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="e_a1" edge="1" parent="1" source="cu41_actor1" style="endArrow=classic;html=0;rounded=0;" target="cu41_main">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_a3" edge="1" parent="1" source="cu41_actor3" style="endArrow=classic;html=0;rounded=0;" target="cu41_ext1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_i1" edge="1" parent="1" source="cu41_main" style="html=0;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cu41_inc1" value="&lt;include&gt;">
+          <mxGeometry relative="1" x="-0.3439" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_i2" edge="1" parent="1" source="cu41_main" style="html=0;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cu41_inc2" value="&lt;include&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_i3" edge="1" parent="1" source="cu41_main" style="html=0;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cu41_inc3" value="&lt;include&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_i4" edge="1" parent="1" source="cu41_main" style="html=0;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cu41_inc4" value="&lt;include&gt;">
+          <mxGeometry relative="1" x="-0.3692" y="-8" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_x1" edge="1" parent="1" source="cu41_ext1" style="html=0;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0.038;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;" target="cu41_inc1" value="&lt;extend&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_x2" edge="1" parent="1" source="cu41_ext2" style="html=0;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0.044;entryY=0.283;entryDx=0;entryDy=0;entryPerimeter=0;" target="cu41_inc2" value="&lt;extend&gt;">
+          <mxGeometry relative="1" x="0.373" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_x3" edge="1" parent="1" source="cu41_ext3" style="html=0;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="cu41_inc3" value="&lt;extend&gt;">
+          <mxGeometry relative="1" x="0.2184" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_x4" edge="1" parent="1" source="cu41_ext4" style="html=0;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;entryX=0.094;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="cu41_inc4" value="&lt;extend&gt;">
+          <mxGeometry relative="1" x="0.0867" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

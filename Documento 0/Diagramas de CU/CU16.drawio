@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="CeN_PIUdNekjedkaocEm">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="540" width="750" x="150" y="-1150" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Accediendo al módulo de gestión de disponibilidad" vertex="1">
+          <mxGeometry height="80" width="160" x="170" y="-940" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Desplegando formulario de bloqueo (inicio, término, motivo)" vertex="1">
+          <mxGeometry height="80" width="160" x="450" y="-1100" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Definiendo rango temporal e inhabilitando bloques por motivos administrativos o licencias" vertex="1">
+          <mxGeometry height="100" width="190" x="430" y="-950" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando citas y superposición, persistiendo día completo" vertex="1">
+          <mxGeometry height="100" width="200" x="430" y="-800" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-6" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xC8Qa8TW7mk6gvlonaFU-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="-890" as="sourcePoint" />
+            <mxPoint x="420" y="-770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-7" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xC8Qa8TW7mk6gvlonaFU-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="-1080" as="sourcePoint" />
+            <mxPoint x="550" y="-1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-8" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="xC8Qa8TW7mk6gvlonaFU-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="-1110" as="sourcePoint" />
+            <mxPoint x="520" y="-1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Notificando servicio no disponible" vertex="1">
+          <mxGeometry height="80" width="160" x="210" y="-750" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rechazando rango superpuesto con otro bloqueo" vertex="1">
+          <mxGeometry height="80" width="160" x="730" y="-700" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando operación y alertando citas agendadas" vertex="1">
+          <mxGeometry height="80" width="160" x="730" y="-940" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Revirtiendo transacción" vertex="1">
+          <mxGeometry height="80" width="160" x="730" y="-790" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-13" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="xC8Qa8TW7mk6gvlonaFU-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="-1110" as="sourcePoint" />
+            <mxPoint x="480" y="-1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-14" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="xC8Qa8TW7mk6gvlonaFU-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="-1040" as="sourcePoint" />
+            <mxPoint x="640" y="-1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-15" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="xC8Qa8TW7mk6gvlonaFU-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="-930" as="sourcePoint" />
+            <mxPoint x="670" y="-930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-16" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="xC8Qa8TW7mk6gvlonaFU-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="-790" as="sourcePoint" />
+            <mxPoint x="700" y="-790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-20" edge="1" parent="1" source="xC8Qa8TW7mk6gvlonaFU-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="xC8Qa8TW7mk6gvlonaFU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xC8Qa8TW7mk6gvlonaFU-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="-850" as="geometry" />
+        </mxCell>
+        <mxCell id="WBnaGPYr0W3W-i0LLgTQ-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU16 - Sistema de gestión de disponibilidad administrativa" vertex="1">
+          <mxGeometry height="26" width="80" x="480" y="-1140" as="geometry" />
+        </mxCell>
+        <mxCell id="z5fEI4f8JYYTwuCRMvWu-2" edge="1" parent="1" source="z5fEI4f8JYYTwuCRMvWu-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="xC8Qa8TW7mk6gvlonaFU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z5fEI4f8JYYTwuCRMvWu-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="-1030" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

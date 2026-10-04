@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="lFqwCkC25JzFP0-cO65z">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kOiYwdWRQlrYp1zqIwVx-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="430" width="710" x="90" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Enviando petición de acceso a módulo o recurso protegido" vertex="1">
+          <mxGeometry height="80" width="170" x="100" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Interceptando solicitud y verificando vigencia del token, de la sesión y rol" vertex="1">
+          <mxGeometry height="92" width="180" x="335" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Aguardando resolución de privilegios mientras se procesa la validación" vertex="1">
+          <mxGeometry height="80" width="160" x="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Contrastando rol con políticas de autorización y permitiendo visualización del dato" vertex="1">
+          <mxGeometry height="80" width="170" x="350" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-20" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-16" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="QD4yQVlxoCb-VBGGtAFl-19" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="260" as="sourcePoint" />
+            <mxPoint x="370" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-21" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-16" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="QD4yQVlxoCb-VBGGtAFl-18" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="70" as="sourcePoint" />
+            <mxPoint x="330" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-22" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-16" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="QD4yQVlxoCb-VBGGtAFl-17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="40" as="sourcePoint" />
+            <mxPoint x="330" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando solicitud y redirigiendo a login por token expirado o sesión revocada" vertex="1">
+          <mxGeometry height="90" width="170" x="160" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generando error de configuración de perfil" vertex="1">
+          <mxGeometry height="70" width="140" x="645" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Notificando servicio de validación no disponible" vertex="1">
+          <mxGeometry height="70" width="140" x="645" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando acceso definitivamente y registrando en bitácora de auditoría" vertex="1">
+          <mxGeometry height="90" width="160" x="640" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-27" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-23" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="QD4yQVlxoCb-VBGGtAFl-16" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="40" as="sourcePoint" />
+            <mxPoint x="430" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-28" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-24" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="QD4yQVlxoCb-VBGGtAFl-17" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="745" y="145" as="sourcePoint" />
+            <mxPoint x="555" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-29" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-25" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="QD4yQVlxoCb-VBGGtAFl-18" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="775" y="255" as="sourcePoint" />
+            <mxPoint x="585" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-30" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-26" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="QD4yQVlxoCb-VBGGtAFl-19" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="805" y="335" as="sourcePoint" />
+            <mxPoint x="615" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-33" edge="1" parent="1" source="QD4yQVlxoCb-VBGGtAFl-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.091;entryY=0.79;entryDx=0;entryDy=0;entryPerimeter=0;" target="QD4yQVlxoCb-VBGGtAFl-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QD4yQVlxoCb-VBGGtAFl-31" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="-30" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="eLwnj5a-Xfw_pBQ6KTt_-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU12 - Sistema de control de acceso basado en roles RBAC" vertex="1">
+          <mxGeometry height="26" width="80" x="405" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="rUEWrDWAW0r6gB51_MTE-5" edge="1" parent="1" source="rUEWrDWAW0r6gB51_MTE-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.373;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" target="QD4yQVlxoCb-VBGGtAFl-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rUEWrDWAW0r6gB51_MTE-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="-30" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="rUEWrDWAW0r6gB51_MTE-7" edge="1" parent="1" source="rUEWrDWAW0r6gB51_MTE-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="QD4yQVlxoCb-VBGGtAFl-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rUEWrDWAW0r6gB51_MTE-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="-30" y="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

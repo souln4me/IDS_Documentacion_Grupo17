@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU33" id="cu33_diagram">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="900" pageHeight="735" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="655" width="700" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=14;" value="CU33 - Sistema Punto Paz Salud" vertex="1">
+          <mxGeometry height="30" width="700" x="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L0" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Comprimiendo archivo por tamaño excedido" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Seleccionando formato permitido" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Reiniciando proceso por pérdida de conexión" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Almacenando archivos en repositorio multimedia" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Cancelando carga multimedia" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="578" as="geometry" />
+        </mxCell>
+        <mxCell id="R0" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando archivo multimedia" vertex="1">
+          <mxGeometry height="80" width="200" x="620" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="R1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Persistiendo archivo en servidor" vertex="1">
+          <mxGeometry height="80" width="200" x="620" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="R2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Asociando archivo a Ficha Clínica Electrónica" vertex="1">
+          <mxGeometry height="80" width="200" x="620" y="419" as="geometry" />
+        </mxCell>
+        <mxCell id="R3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Confirmando carga del archivo" vertex="1">
+          <mxGeometry height="80" width="200" x="620" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="inc0" edge="1" parent="1" source="L3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="L3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" edge="1" parent="1" source="L3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" edge="1" parent="1" source="L3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="ext0" edge="1" parent="1" source="L0" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="L1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" edge="1" parent="1" source="L2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R1" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="ext4" edge="1" parent="1" source="L4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="R3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.3" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" edge="1" parent="1" source="A1" style="html=1;endArrow=classic;endSize=8;curved=0;rounded=0;" target="L3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

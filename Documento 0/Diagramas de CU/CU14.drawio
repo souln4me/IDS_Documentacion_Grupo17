@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="mo2BFIwSbDM9LCDja8uP">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5kcQLVv6a5-CIqoPOfnt-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="420" width="730" x="79" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-18" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Accediendo al motor de búsqueda y aplicando filtros de especialidad, modalidad y fecha" vertex="1">
+          <mxGeometry height="97" width="180" x="90" y="151" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generando bloques de una hora descontando citas y bloqueos de agenda" vertex="1">
+          <mxGeometry height="85" width="160" x="364" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Seleccionando bloque horario disponible para proceder con la reserva" vertex="1">
+          <mxGeometry height="85" width="150" x="369" y="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando estado del bloque en tiempo real e iniciando vinculación de cita al paciente con la modalidad elegida" vertex="1">
+          <mxGeometry height="110" width="170" x="354" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-7" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-6" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="495" as="sourcePoint" />
+            <mxPoint x="420" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-8" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="305" as="sourcePoint" />
+            <mxPoint x="550" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-9" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-3" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="275" as="sourcePoint" />
+            <mxPoint x="520" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Alertando catálogo de especialidades no disponible" vertex="1">
+          <mxGeometry height="70" width="140" x="149" y="327.5" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Notificando ausencia de profesionales con cupos" vertex="1">
+          <mxGeometry height="75" width="150" x="649" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizando vista por bloque reservado" vertex="1">
+          <mxGeometry height="70" width="140" x="659" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Redirigiendo a inicio de sesión por expiración" vertex="1">
+          <mxGeometry height="70" width="140" x="659" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-14" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="275" as="sourcePoint" />
+            <mxPoint x="480" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-15" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="759" y="70" as="sourcePoint" />
+            <mxPoint x="569" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-16" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="789" y="180" as="sourcePoint" />
+            <mxPoint x="599" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgZt-FdPt6DS0Pdf7NjZ-17" edge="1" parent="1" source="lgZt-FdPt6DS0Pdf7NjZ-13" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="lgZt-FdPt6DS0Pdf7NjZ-6" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="819" y="320" as="sourcePoint" />
+            <mxPoint x="629" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fh0MOfTMV92a-GRbxW9r-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU14 - Sistema de motor de agendamiento de citas" vertex="1">
+          <mxGeometry height="26" width="80" x="404" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

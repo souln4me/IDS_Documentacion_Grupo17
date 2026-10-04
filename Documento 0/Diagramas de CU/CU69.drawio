@@ -1,0 +1,145 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="p0-EnvJjuDRUXePumNNe">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q6yhrCBPKyUHed1F7kLe-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span id=&quot;docs-internal-guid-87aadd64-7fff-5b64-5ad8-c253f83f9ca7&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(31, 31, 31); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;CU69: Registrando en Bitácora de Transacciones Externas&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="730" x="-350" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-420" y="720" as="sourcePoint" />
+            <mxPoint x="390" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-420" y="200" as="sourcePoint" />
+            <mxPoint x="390" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-420" y="200" as="sourcePoint" />
+            <mxPoint x="-420" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="200" as="sourcePoint" />
+            <mxPoint x="390" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Registrando en historia de transacciones externas&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="230" x="-400" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-8" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-200" y="350" as="sourcePoint" />
+            <mxPoint x="-110" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-9" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-170" y="390" as="sourcePoint" />
+            <mxPoint x="-100" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-10" edge="1" parent="1" source="-dWXyaIE01t3oo_howMO-7" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-170" y="429" as="sourcePoint" />
+            <mxPoint x="-100" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-11" edge="1" parent="1" source="-dWXyaIE01t3oo_howMO-7" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=0;exitX=0.727;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-210" y="470" as="sourcePoint" />
+            <mxPoint x="-120" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-12" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-290" y="510" as="sourcePoint" />
+            <mxPoint x="-280" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Notificando inconsistencia técnica&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="-380" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Emitiendo peticiones y capturando metadatos&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="-103" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Procesando y despachando solicitud al proveedor&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="186" x="-95" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Persistiendo en Bitacora_Auditoria con acción INTEGRACION_EXTERNA&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="-150" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Continuando operación y notificando inconsistencia&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="180" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Registrando error por latencia&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="146.5" x="193" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Recibiendo respuesta y calculando latencia&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="172" x="-95" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Registrando rechazo 401 y alertando al Administrador&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="150" x="180" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-22" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;startArrow=open;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="370" as="sourcePoint" />
+            <mxPoint x="200" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-23" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;startArrow=open;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="265" as="sourcePoint" />
+            <mxPoint x="180" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-24" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;startArrow=open;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="490" as="sourcePoint" />
+            <mxPoint x="180" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-220" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-170" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-190" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-220" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Extend&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Extend&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-350" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Extend&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;&amp;lt;Extend&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-36" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Proveedor Externo&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="-630" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="-dWXyaIE01t3oo_howMO-38" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;endFill=0;" target="-dWXyaIE01t3oo_howMO-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-580" y="400" as="sourcePoint" />
+            <mxPoint x="-420" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

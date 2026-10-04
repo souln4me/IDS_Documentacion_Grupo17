@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="lu40C-LN_ZPZvjK3TO_C">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0i75ceSjRSrZp6e63qXW-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="490" width="770" x="57" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Accediendo al módulo de triaje para evaluación previa a consulta" vertex="1">
+          <mxGeometry height="80" width="160" x="80" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Activando interfaz dinámica con preguntas secuenciales desde árbol de decisión (motivo, rama, evolución, antecedentes, alergias)" vertex="1">
+          <mxGeometry height="120" width="190" x="355" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Completando captura de sintomatología y antecedentes en árbol de decisión" vertex="1">
+          <mxGeometry height="80" width="160" x="370" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando cierre del cuestionario y marcando datos para procesamiento clínico" vertex="1">
+          <mxGeometry height="80" width="160" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-6" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0i75ceSjRSrZp6e63qXW-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="370" as="sourcePoint" />
+            <mxPoint x="340" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-7" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0i75ceSjRSrZp6e63qXW-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="180" as="sourcePoint" />
+            <mxPoint x="470" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-8" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="0i75ceSjRSrZp6e63qXW-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="150" as="sourcePoint" />
+            <mxPoint x="440" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando entrada por disclaimer pendiente" vertex="1">
+          <mxGeometry height="80" width="160" x="140" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Deteniendo progresión por error de reglas" vertex="1">
+          <mxGeometry height="80" width="160" x="650" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Conservando respuestas parciales y reanudando" vertex="1">
+          <mxGeometry height="80" width="160" x="650" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Notificando falla de persistencia del cuestionario" vertex="1">
+          <mxGeometry height="80" width="160" x="650" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-13" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="0i75ceSjRSrZp6e63qXW-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="150" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-14" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="0i75ceSjRSrZp6e63qXW-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="220" as="sourcePoint" />
+            <mxPoint x="560" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-15" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="0i75ceSjRSrZp6e63qXW-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="330" as="sourcePoint" />
+            <mxPoint x="590" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-16" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="0i75ceSjRSrZp6e63qXW-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="470" as="sourcePoint" />
+            <mxPoint x="620" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-18" edge="1" parent="1" source="0i75ceSjRSrZp6e63qXW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0i75ceSjRSrZp6e63qXW-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0i75ceSjRSrZp6e63qXW-17" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" x="-30" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="BskFtxcp539Ozeqo2TDd-1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU23 - Sistema de entrevista clínica automatizada de triaje" vertex="1">
+          <mxGeometry height="26" width="80" x="410" y="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

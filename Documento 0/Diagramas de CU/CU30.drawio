@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU30" id="cu30_diagram">
+    <mxGraphModel dx="1614" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="520" width="750" x="90" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-63" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU30 - Asegurando inalterabilidad de registros clínicos" vertex="1">
+          <mxGeometry height="30" width="350" x="360" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-64" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" x="20" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-65" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Asegurando inalterabilidad de registros clínicos" vertex="1">
+          <mxGeometry height="70" width="160" x="130" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando edición/eliminación, auditando y ofreciendo corrección versionada (CU31)" vertex="1">
+          <mxGeometry height="100" width="180" x="610" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Cerrando desde la Sesión Clínica y aplicando firma generada desde el perfil" vertex="1">
+          <mxGeometry height="100" width="180" x="610" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-68" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Asignando estado finalizado" vertex="1">
+          <mxGeometry height="70" width="160" x="620" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Guardando alerta crítica por intento de vulneración" vertex="1">
+          <mxGeometry height="60" width="170" x="170" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-70" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Denegando acceso por token expirado" vertex="1">
+          <mxGeometry height="60" width="170" x="170" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando firma por falta de registro profesional" vertex="1">
+          <mxGeometry height="80" width="180" x="150" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-72" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Manteniendo registro abierto por error de Controlador" vertex="1">
+          <mxGeometry height="60" width="170" x="240" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-73" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-64" style="endArrow=classic;html=1;rounded=0;" target="D0BGA0TV9w6GW-GmY1iF-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-74" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-65" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0BGA0TV9w6GW-GmY1iF-66" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-75" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-65" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.019;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;" target="D0BGA0TV9w6GW-GmY1iF-67" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-76" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-65" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.063;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" target="D0BGA0TV9w6GW-GmY1iF-68" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-77" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-69" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="D0BGA0TV9w6GW-GmY1iF-66" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-78" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-70" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="D0BGA0TV9w6GW-GmY1iF-66" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-79" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-71" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="D0BGA0TV9w6GW-GmY1iF-67" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" x="-0.0009" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D0BGA0TV9w6GW-GmY1iF-80" edge="1" parent="1" source="D0BGA0TV9w6GW-GmY1iF-72" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D0BGA0TV9w6GW-GmY1iF-68" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

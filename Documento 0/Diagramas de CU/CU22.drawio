@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="pjpchzKujNY4HXuiCb3I">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="540" width="770" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ejecutando modificación o cambio de estado sobre cita médica" vertex="1">
+          <mxGeometry height="80" width="160" x="130" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Detectando transición y capturando ID, timestamp, IP de origen y rol" vertex="1">
+          <mxGeometry height="80" width="160" x="420" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ingresando justificación obligatoria en cancelaciones y reprogramaciones" vertex="1">
+          <mxGeometry height="92" width="180" x="410" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validando metadatos y persistiendo log de auditoría dentro de la misma transacción" vertex="1">
+          <mxGeometry height="92" width="180" x="410" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-6" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bHdK27NTTzwNmNvRUOOs-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="300" as="sourcePoint" />
+            <mxPoint x="390" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-7" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bHdK27NTTzwNmNvRUOOs-4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="110" as="sourcePoint" />
+            <mxPoint x="520" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-8" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="bHdK27NTTzwNmNvRUOOs-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="80" as="sourcePoint" />
+            <mxPoint x="490" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Revirtiendo operación por fallo de auditoría" vertex="1">
+          <mxGeometry height="80" width="160" x="200" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bloqueando edición por estado terminal" vertex="1">
+          <mxGeometry height="80" width="160" x="700" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Lanzando advertencia por pérdida de sesión" vertex="1">
+          <mxGeometry height="80" width="160" x="700" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Impidiendo transición por justificación vacía" vertex="1">
+          <mxGeometry height="80" width="160" x="700" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-13" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-9" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="bHdK27NTTzwNmNvRUOOs-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="80" as="sourcePoint" />
+            <mxPoint x="450" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-14" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="bHdK27NTTzwNmNvRUOOs-3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="150" as="sourcePoint" />
+            <mxPoint x="610" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-15" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-11" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="bHdK27NTTzwNmNvRUOOs-4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="260" as="sourcePoint" />
+            <mxPoint x="640" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-16" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-12" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="bHdK27NTTzwNmNvRUOOs-5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="400" as="sourcePoint" />
+            <mxPoint x="670" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-21" edge="1" parent="1" source="bHdK27NTTzwNmNvRUOOs-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bHdK27NTTzwNmNvRUOOs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bHdK27NTTzwNmNvRUOOs-20" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Profesional" vertex="1">
+          <mxGeometry height="60" width="30" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AP7M4PUkcsf3XyRyxE---1" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="CU22 - Sistema de trazabilidad de transiciones de agenda" vertex="1">
+          <mxGeometry height="26" width="80" x="445" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2jCbCGnNgvbxassl0clf-3" edge="1" parent="1" source="2jCbCGnNgvbxassl0clf-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="bHdK27NTTzwNmNvRUOOs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2jCbCGnNgvbxassl0clf-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Paciente" vertex="1">
+          <mxGeometry height="60" width="30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2jCbCGnNgvbxassl0clf-4" edge="1" parent="1" source="2jCbCGnNgvbxassl0clf-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="bHdK27NTTzwNmNvRUOOs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2jCbCGnNgvbxassl0clf-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
