@@ -1,2 +1,2 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-*.docx filter=lfs diff=lfs merge=lfs -text
+Incremento[[:space:]]3/Entrega[[:space:]]del[[:space:]]Incremento[[:space:]]3.docx filter=lfs diff=lfs merge=lfs -text
