@@ -1,71 +1,78 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="CU55" id="cu55_diagram">
-    <mxGraphModel dx="1000" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="841" pageHeight="813" math="0" shadow="0">
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="26.0.0" pages="1">
+  <diagram id="CU55" name="CU55">
+    <mxGraphModel dx="1790" dy="1095" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1790" pageHeight="1095" math="0" shadow="0" background="#ffffff">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="100" y="0" width="721" height="793" as="geometry" />
+        <mxCell id="system" value="" style="rounded=1;whiteSpace=wrap;html=0;absoluteArcSize=1;arcSize=16;strokeWidth=2;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="190" y="20" width="1575" height="1055" as="geometry" />
         </mxCell>
-        <mxCell id="title" value="CU55 – Evaluando satisfacción post-sesión" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=17;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="110" y="6" width="701" height="34" as="geometry" />
+        <mxCell id="title" value="CU55 – Evaluando satisfacción post-sesión" style="text;html=0;align=center;verticalAlign=middle;fontStyle=1;strokeColor=none;fillColor=none;fontSize=24;fontFamily=Arial;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="1515" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="UC" value="Evaluando satisfacción post-sesión" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=18;spacingRight=18;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="112" y="364" width="160" height="91" as="geometry" />
+        <mxCell id="main" value="Evaluando satisfacción post-sesión" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="493.0" width="325" height="184" as="geometry" />
         </mxCell>
-        <mxCell id="I0" value="Enviando al paciente el aviso 'Califica tu atención' al cerrarse la sesión" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="358" y="44" width="185" height="146" as="geometry" />
+        <mxCell id="actor0" value="Paciente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Arial;fontSize=19;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="72" y="540.0" width="45" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="inc0" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I0">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="association0" value="" style="html=0;endArrow=classic;endSize=10;curved=0;rounded=0;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="actor0" target="main">
+          <mxGeometry x="0" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E0_0" value="Rechazando la evaluación de una cita no realizada o ya evaluada" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="631" y="58" width="178" height="118" as="geometry" />
+        <mxCell id="step1" value="Avisando al paciente que evalúe su sesión o su tratamiento" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="805" y="145" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="ext0_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E0_0" target="I0">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="include1" value="&lt;&lt;include&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="main" target="step1">
+          <mxGeometry x="-0.2" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="I1" value="Abriendo Mis Citas con el formulario de la cita desplegado" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="358" y="226" width="185" height="91" as="geometry" />
+        <mxCell id="step2" value="Abriendo el aviso" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="805" y="330" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="include2" value="&lt;&lt;include&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="main" target="step2">
+          <mxGeometry x="-0.2" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E1_0" value="Evaluando desde la sección 'Califica tu atención' de Mis Citas" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="631" y="212" width="178" height="118" as="geometry" />
+        <mxCell id="step3" value="Mostrando el formulario que corresponde" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="805" y="515" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="ext1_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E1_0" target="I1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="include3" value="&lt;&lt;include&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="main" target="step3">
+          <mxGeometry x="-0.2" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="I2" value="Marcando la nota en estrellas y escribiendo una reseña opcional" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="358" y="380" width="185" height="118" as="geometry" />
+        <mxCell id="step4" value="Respondiendo si quedó satisfecho o marcando las estrellas y escribiendo un comentario" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="805" y="700" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="inc2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="include4" value="&lt;&lt;include&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="main" target="step4">
+          <mxGeometry x="-0.2" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E2_0" value="Procesando evaluación solo cuantitativa o con reseña bloqueada por términos no permitidos" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="631" y="352" width="178" height="173" as="geometry" />
+        <mxCell id="step5" value="Registrando la evaluación, revisando el comentario y actualizando el promedio del profesional" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="805" y="885" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="ext2_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E2_0" target="I2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="include5" value="&lt;&lt;include&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="main" target="step5">
+          <mxGeometry x="-0.2" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="I3" value="Registrando la evaluación, filtrando la reseña (CU57) y recalculando el promedio bloqueando la fila del profesional" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="358" y="547" width="185" height="228" as="geometry" />
+        <mxCell id="exception1" value="Rechazando la evaluación de una sesión no realizada o de un tratamiento abierto o ya evaluado" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="145" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="inc3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="UC" target="I3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="extend1" value="&lt;&lt;extend&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="exception1" target="step1">
+          <mxGeometry x="0" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="E3_0" value="Reanudando cálculo tras bloqueo transaccional" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;spacing=0;spacingLeft=20;spacingRight=20;" vertex="1" parent="1">
-          <mxGeometry x="631" y="602" width="178" height="118" as="geometry" />
+        <mxCell id="exception2" value="Manteniendo la evaluación pendiente en sus citas al descartar el aviso" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="330" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="ext3_0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=#ffffff;endArrow=open;dashed=1;endSize=10;curved=0;rounded=0;fontSize=13;" edge="1" parent="1" source="E3_0" target="I3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="extend2" value="&lt;&lt;extend&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="exception2" target="step2">
+          <mxGeometry x="0" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A1" value="Paciente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="34" y="376" width="28" height="52" as="geometry" />
+        <mxCell id="exception3" value="Registrando solo la respuesta o la nota por comentario vacío o no permitido" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="700" width="365" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="as1" value="" style="html=1;endArrow=classic;endSize=10;curved=0;rounded=0;" edge="1" parent="1" source="A1" target="UC">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="extend3" value="&lt;&lt;extend&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="exception3" target="step4">
+          <mxGeometry x="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="exception4" value="Procesando en orden dos calificaciones simultáneas del mismo profesional" style="ellipse;whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontSize=18;fontColor=#000000;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="885" width="365" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="extend4" value="&lt;&lt;extend&gt;&gt;" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;curved=0;rounded=0;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=17;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="exception4" target="step5">
+          <mxGeometry x="0" relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
